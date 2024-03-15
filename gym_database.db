@@ -1,0 +1,15 @@
+# Activate your virtual environment if you have one
+# Then run the following commands
+
+# Start a Python shell
+python
+
+# Import your app and db objects
+from app import app, db
+
+# Create the database tables
+with app.app_context():
+    db.create_all()
+
+# Exit the Python shell
+exit()

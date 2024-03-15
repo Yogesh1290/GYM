@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.0/socket.io.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    {% include 'header.html' %}
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Welcome to Gym Management System</h1>
+                <p>Efficiently manage your gym with our powerful system.</p>
+                <a href="{{ url_for('register') }}" class="btn">Get Started</a>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <h2>Key Features</h2>
+                <ul>
+                    <li>Membership Management</li>
+                    <li>Attendance Tracking</li>
+                    <li>Payment Processing</li>
+                    <li>Appointment Scheduling</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="testimonial">
+            <div class="container">
+                <h2>What Our Users Say</h2>
+                <blockquote>
+                    "The Gym Management System has streamlined our operations and improved member satisfaction."
+                </blockquote>
+                <p>- John Doe, Gym Owner</p>
+            </div>
+        </section>
+    </main>
+    {% include 'footer.html' %}
+</body>
+</html>
